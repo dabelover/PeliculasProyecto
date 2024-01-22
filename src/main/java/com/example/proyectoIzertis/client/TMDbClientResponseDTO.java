@@ -1,4 +1,4 @@
-package com.example.proyectoAzertis.client;
+package com.example.proyectoIzertis.client;
 
 import java.util.List;
 

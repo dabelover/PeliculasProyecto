@@ -1,10 +1,10 @@
-package com.example.proyectoAzertis;
+package com.example.proyectoIzertis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProyectoAzertisApplicationTests {
+class ProyectoIzertisApplicationTests {
 
 	@Test
 	void contextLoads() {

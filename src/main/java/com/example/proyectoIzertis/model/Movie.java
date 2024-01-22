@@ -1,4 +1,4 @@
-package com.example.proyectoAzertis.model;
+package com.example.proyectoIzertis.model;
 
 import java.util.List;
 

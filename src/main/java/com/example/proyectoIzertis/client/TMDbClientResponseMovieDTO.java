@@ -1,4 +1,4 @@
-package com.example.proyectoAzertis.client;
+package com.example.proyectoIzertis.client;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

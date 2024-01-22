@@ -1,6 +1,6 @@
-package com.example.proyectoAzertis.client;
+package com.example.proyectoIzertis.client;
 
-import com.example.proyectoAzertis.model.Movie;
+import com.example.proyectoIzertis.model.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

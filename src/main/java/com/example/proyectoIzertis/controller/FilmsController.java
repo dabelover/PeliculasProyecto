@@ -1,7 +1,7 @@
-package com.example.proyectoAzertis.controller;
+package com.example.proyectoIzertis.controller;
 
-import com.example.proyectoAzertis.client.FilmsRepository;
-import com.example.proyectoAzertis.model.Movie;
+import com.example.proyectoIzertis.client.FilmsRepository;
+import com.example.proyectoIzertis.model.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

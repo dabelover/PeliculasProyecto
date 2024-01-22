@@ -27,6 +27,4 @@ public class FilmsController {
         return filmsRepository.getMovies(name);
     }
 
-
-
 }

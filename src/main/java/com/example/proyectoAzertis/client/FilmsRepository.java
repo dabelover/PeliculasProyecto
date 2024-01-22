@@ -2,6 +2,7 @@ package com.example.proyectoAzertis.client;
 
 import com.example.proyectoAzertis.model.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -14,10 +15,17 @@ import java.util.stream.Collectors;
 public class FilmsRepository {
 
     private final MovieMapper movieMapper;
+    private final String tmdbApiKey;
+
+//    @Autowired
+//    public FilmsRepository(MovieMapper movieMapper) {
+//        this.movieMapper = movieMapper;
+//    }
 
     @Autowired
-    public FilmsRepository(MovieMapper movieMapper) {
+    public FilmsRepository(@Value("${tmdb.api.key}") String tmdbApiKey, MovieMapper movieMapper) {
         this.movieMapper = movieMapper;
+        this.tmdbApiKey = tmdbApiKey;
     }
 
     public List<Movie> getMovies(String movieName) {

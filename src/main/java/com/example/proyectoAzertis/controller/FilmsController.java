@@ -1,10 +1,15 @@
-package com.example.proyectoAzertis;
+package com.example.proyectoAzertis.controller;
 
+import com.example.proyectoAzertis.client.FilmsRepository;
+import com.example.proyectoAzertis.model.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 @Controller
 public class FilmsController {
@@ -17,15 +22,11 @@ public class FilmsController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/getFilms") // Exponer al público
-    public void getFilmList(@RequestParam String name){
-
-
-        // TODO Llamar a Servicio
-        // TODO Mapear DTO
-        // Olvidar todo lo que se de java (casi todo)
-
-        Movie movie = filmsRepository.A(name);
+    @ResponseBody
+    public List<Movie> getFilmList(@RequestParam String name){
+        return filmsRepository.getMovies(name);
     }
+
 
 
 }
